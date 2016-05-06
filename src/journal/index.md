@@ -1,10 +1,10 @@
 ---
-title: Journal
-description: The journal of Brian Koser, Melissa Koser, and Lydia Koser
+title: Ten to One
+description: The podcast where we make top ten lists of everything.
 paginate: posts
-section: journal
+section: episodes
 ---
-# Journal
+# Episodes
 
 {% for post in collections.posts %}
 <article>

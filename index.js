@@ -24,6 +24,7 @@ Metalsmith(__dirname)
     
     /* define before inplace so inplace can use the globals */
     .use(define({
+        development: true,
         sitelocation: 'http://tto.koser.us',
         sitename: 'tto.koser.us'
     }))
