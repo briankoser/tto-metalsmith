@@ -1,0 +1,1035 @@
+/******************************************************************************
+  FONTS
+******************************************************************************/
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/sourcesanspro-bold.woff2') format('woff2'),
+         url('/fonts/sourcesanspro-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('/fonts/SourceSerifPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('/fonts/SourceSerifPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('/fonts/Heuristica-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/*****************************************************************************
+  ALL
+******************************
+  *, @viewport
+******************************************************************************/
+*, 
+*:before, 
+*:after {
+       -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+}
+
+* + * {
+    margin-top: 1.4em;
+}
+
+@-ms-viewport { 
+    width: device-width; 
+}
+
+@viewport { 
+    width: device-width; 
+}
+
+
+
+/******************************************************************************
+  SECTIONING AND STRUCTURING
+******************************
+  html, body, header, footer, nav, main, article, aside, section, p, pre,
+  blockquote, figure, figcaption, address, summary, details, div
+******************************************************************************/
+html {
+    color: #333;
+    font: 26px/1.4 'Source Serif Pro', Georgia, sans-serif;
+    /*Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+      Turn off all other ligatures, tabular, lining numerals, and alternates */
+    -webkit-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+       -moz-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+            font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    vertical-align: text-top;
+}
+
+footer,
+small,
+.milli,
+.post-author,
+.post-date {
+    font-size: 0.714rem;
+}
+
+footer,
+main,
+.site-nav ul,
+.site-title {
+    margin: 0 auto;
+    max-width: 33rem;
+}
+
+footer {
+    text-align: right;
+}
+
+nav a,
+h1 a,
+h2 a,
+h3 a,
+.footer-container {
+    text-decoration: none;
+}
+
+main {
+    hanging-punctuation: first;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+main footer nav a {
+    border-top: #333 solid 2px;
+    max-width: 50%;
+    line-height: 1em;
+    padding-top: 0.4em;
+}
+
+article header {
+    font-family: 'Source Serif Pro', Georgia, sans-serif;
+}
+
+article footer {
+    font-size: 1rem;
+}
+
+p a {
+    border-bottom: solid 1px #4f93f9;
+    text-decoration: none;
+}
+
+p a:hover {
+    -webkit-transition: border-bottom-width 100ms cubic-bezier(1, 0, 0, 1);
+            transition: border-bottom-width 100ms cubic-bezier(1, 0, 0, 1);
+    border-bottom-width: 3px;
+}
+
+/* Turn off kerning and ligatures,
+   Turn on lining, tabular numerals, slashed zero */
+pre, 
+code,
+samp,
+kbd {
+  -webkit-font-feature-settings: 'dlig' 0, 'kern' 0, 'liga' 0, 'lnum' 1, 'onum' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+     -moz-font-feature-settings: 'dlig' 0, 'kern' 0, 'liga' 0, 'lnum' 1, 'onum' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+          font-feature-settings: 'dlig' 0, 'kern' 0, 'liga' 0, 'lnum' 1, 'onum' 0, 'pnum' 0, 'tnum' 1, 'zero' 1;
+}
+
+pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+pre code {
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+q {
+    quotes: none;
+}
+
+blockquote mark, 
+q mark {
+    font-style: italic;
+}
+
+blockquote {
+    background-color: #fffff0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: inherit;
+    padding: 0.5em .5em .5em 2.5em;
+    position: relative;
+}
+
+blockquote:before {
+    background-color: #4f93f9;
+    color: white;
+    content: open-quote;
+    font-family: Georgia, 'Droid Serif', serif;
+    font-size: 4.5em;
+    height: 100%;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+}
+
+blockquote p {
+    display: inline;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+/******************************************************************************
+  HEADINGS
+************
+  hgroup, h1, h2, h3, h4, h5, h6
+******************************************************************************/
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon
+h6, .zeta {
+    font-weight: bold;
+    margin: 1.4rem 0 0 0;
+}
+
+/* Turn on discretionary ligatures for larger headings */
+h1, .alpha,
+h2, .beta,
+h3, .gamma {
+    -webkit-font-feature-settings: 'dlig', 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+       -moz-font-feature-settings: 'dlig', 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+            font-feature-settings: 'dlig', 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+}
+
+h1 + *,
+h2 + *,
+h3 + * {
+    margin-top: 0;
+}
+
+h1, .alpha {
+    font-size: 1.618rem;
+}
+
+h2, .beta {
+    font-size: 1.4rem;
+}
+
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+    font-size: 1rem;
+}
+
+
+
+/******************************************************************************
+  LISTS
+*********
+  ul, ol, li, dl, dt, dd, menu, menuitem
+******************************************************************************/
+ul,
+ol {
+    padding-left: 1em;
+}
+
+ul,
+ol {
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: circle;
+}
+
+ul.horizontal li {
+    display: inline-block;
+    margin: 0;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+ol ol li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+ol ul {
+    list-style-position: inside;
+}
+
+ol h3 {
+    margin-top: 0;
+}
+
+li {
+    margin-top: 0;
+}
+
+dd {
+    padding-left: 1em;
+}
+
+
+
+/******************************************************************************
+  MEDIA
+*********
+  canvas, object, embed, img, audio, video, track, map, area, iframe
+******************************************************************************/
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+
+
+/******************************************************************************
+  FORMS
+*********
+  form, fieldset, legend, label, input, button, select, optgroup, option, 
+  datalist, textarea, output
+******************************************************************************/
+input, 
+select {
+    vertical-align: middle;
+}
+
+/* Turn on lining numerals */
+input[type='color'], 
+input[type='date'], 
+input[type='datetime'], 
+input[type='datetime-local'], 
+input[type='number'], 
+input[type='range'], 
+input[type='tel'], 
+input[type='week'] {
+    -webkit-font-feature-settings: 'dlig', 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum' 0, 'zero';
+       -moz-font-feature-settings: 'dlig', 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum' 0, 'zero';
+            font-feature-settings: 'dlig', 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum' 0, 'zero';
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/******************************************************************************
+  TABLES
+**********
+  table, caption, colgroup, col, thead, tfoot, tbody, tr, th, td
+******************************************************************************/
+table {
+    border-style: hidden;
+    -webkit-font-feature-settings: 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum', 'zero';
+       -moz-font-feature-settings: 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum', 'zero';
+            font-feature-settings: 'kern' 0, 'liga', 'lnum', 'onum' 0, 'pnum' 0, 'tnum', 'zero';
+}
+
+table thead, 
+table tfoot {
+    -webkit-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+       -moz-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+            font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'tnum' 0;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 0.25em;
+}
+
+th {
+    background-color: #4f93f9;
+    color: #fff;
+}
+
+
+
+/******************************************************************************
+  PHRASING
+************
+  a, strong, em, b, i, u, s, sup, sub, small, abbr, dfn, mark, del, ins, q, 
+  cite, data, progress, time, meter, code, var, samp, kbd, keygen, bdi, bdo, 
+  ruby, rt, rp, span
+******************************************************************************/
+a.menu-link {
+   display: none;
+}
+
+em {
+    font-style: italic;
+}
+
+sup {
+    -webkit-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'sups', 'tnum' 0;
+       -moz-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'sups', 'tnum' 0;
+            font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'sups', 'tnum' 0;
+}
+
+sub {
+    -webkit-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'subs', 'tnum' 0;
+       -moz-font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'subs', 'tnum' 0;
+            font-feature-settings: 'dlig' 0, 'kern', 'liga', 'lnum' 0, 'onum', 'pnum', 'subs', 'tnum' 0;
+}
+
+abbr[title], 
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+del {
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #aaa;
+       -moz-text-decoration-color: #aaa;
+            text-decoration-color: #aaa;
+}
+
+del.edit-block {
+    border-left-color: #91081f;
+    color: #aaa;
+    text-decoration: none;
+}
+
+ins {
+    border-bottom: 1px solid #ccc;
+    color: #388807;
+    text-decoration: none;
+}
+
+ins::before {
+    content: ' (Update) ';
+    display: inline;
+    font-style: italic;
+}
+
+ins[datetime]::before {
+    content: ' (Update ' attr(datetime) ') ';
+}
+
+ins p {
+    display: inline;
+}
+
+ins.edit-block {
+    border-bottom: none;
+    border-left-color: #47ad09;
+    color: #444;
+}
+
+code,
+var,
+.line-numbers,
+.line-pre,
+.terminal { 
+    font: 14px/1.3 'Source Code Pro', Consolas, Inconsolata, "Liberation Mono", Courier, monospace !important;
+}
+
+code,
+var {
+    background-color: rgba(0,107,159,0.04);
+    border: 1px solid #4f93f9;
+    border-radius: 2px;
+    color: #4f93f9;
+    margin: 0 0.15em;
+    padding: 0 0.3em;
+}
+
+kbd kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin: 0 0.1em;
+    padding: 0.1em 0.6em;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+}
+
+
+
+/******************************************************************************
+  MISCELLANEOUS
+*****************
+  hr
+******************************************************************************/
+hr {
+    border: 0;
+    border-top: 1px solid #4f93f9;
+    display: block;
+    height: 1px;
+    padding: 0;
+}
+
+hr.fleuron {
+    border-top: none;
+    padding-bottom: 1.4em;
+    text-align: center;
+}
+
+hr.fleuron::after {
+    content: '❧';
+}
+
+::-moz-selection {
+    background: #4f93f9;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #4f93f9;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+
+/******************************************************************************
+  HELPER CLASSES
+******************************************************************************/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: block;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.float-left {
+    clear: both;
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.fraction {
+  -webkit-font-feature-settings: "frac" 1;
+     -moz-font-feature-settings: "frac" 1;
+          font-feature-settings: "frac" 1;
+}
+
+/* Hide visually and from screen readers */
+.hidden {
+    display: none !important;
+}
+
+/* * Hide visually and from screen readers, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+.margin-top {
+    margin-top: 1.4em;
+}
+
+.no-list-type li {
+    list-style-type: none;
+}
+
+.no-margin,
+.no-margin li {
+    margin: 0;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+.small-caps {
+    text-transform: uppercase;
+    -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+       -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+            font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+}
+
+.top-border {
+    border-top: 0.2rem solid #333;
+}
+
+.uppercase {
+    -webkit-font-feature-settings: 'lnum' 1;
+       -moz-font-feature-settings: 'lnum' 1;
+            font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+/* * Hide only visually, but have it available for screen readers */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+
+
+/******************************************************************************
+  STYLE CLASSES
+******************************************************************************/
+.ascii-art {
+    margin-top: 1.4rem;
+}
+
+.book-summary .media-figure {
+    max-height: 5.3em;
+}
+
+.edit-block {
+    border-left: 0.5rem solid;
+    display: block;
+    margin-left: -1rem;
+    padding-left: 0.5rem;
+}
+
+.footer-container,
+.footer-container a,
+.site-nav li a,
+.site-nav .icon,
+.site-title a {
+    color: #fff;
+}
+
+.footer-container,
+.site-nav {
+    background-color: #333;
+}
+
+.footer-container {
+    padding: 1em 0;
+}
+
+.gist table {
+    margin-bottom: 0;
+}
+
+.gist td {
+    background-color: #f8f8ff;
+}
+
+.header-container {
+    background-color: #4f93f9;
+    color: #fff;
+    margin-top: 0;
+}
+
+.icon {
+	display: inline-block;
+    color: #333;
+	fill: currentColor;
+    font-size: 18px;
+    height: 1em;
+    width: 1em;
+}
+
+.js .site-nav {
+    max-height: none;
+}
+
+.keywords li {
+    border: 2px solid #4f93f9;
+    border-radius: 15px;
+    padding: .15em;
+}
+
+.license {
+    text-align: right;
+}
+
+.media {
+    display: flex;
+}
+
+.media-body {
+    flex: 1;
+    margin-top: 0;
+}
+
+.media-figure {
+    margin-right: 1em;
+}
+
+.paper {
+    box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+    padding: 1em;
+}
+
+.post-date::before {
+    content: ' · ';
+}
+
+.post-excerpt {
+    margin-top: .25rem;
+}
+
+.profile-aside {
+    float: right;
+    margin-top: 0;
+    width: 30%;
+}
+
+.profile-bio {
+    float: left;
+    margin-top: 0;
+    width: 60%;
+}
+
+.recipe-list a {
+    text-decoration: none;
+}
+
+.site-nav ul {
+    border: 0;
+    -webkit-padding-start: 0;
+}
+
+.site-nav li {
+    margin-left: 0;
+}
+
+.site-nav li + li {
+    margin-left: 2em;
+}
+
+.site-nav li a {
+    border: 0;
+}
+
+.site-nav {
+    margin: 0;
+}
+
+.site-nav li:hover,
+.site-nav-active {
+    border-bottom: #fff 5px solid;
+}
+
+.site-nav-link {
+    margin-left: 0.1em;
+}
+
+.site-title {
+    font-size: 1.96rem;
+    font-weight: bold;
+}
+
+.star-rating {
+    color: goldenrod;
+}
+
+.table-invisible th,
+.table-invisible td {
+    border: none;
+    padding: 0;
+    -webkit-font-feature-settings: 'kern' 0, 'liga', 'lnum' 0, 'onum', 'pnum' 0, 'tnum', 'zero' 0;
+       -moz-font-feature-settings: 'kern' 0, 'liga', 'lnum' 0, 'onum', 'pnum' 0, 'tnum', 'zero' 0;
+            font-feature-settings: 'kern' 0, 'liga', 'lnum' 0, 'onum', 'pnum' 0, 'tnum', 'zero' 0;
+}
+
+.terminal {
+    border: 1px solid #000;
+    background-color: #333;
+    color: #fff;
+}
+
+.top-list {
+    width: 45%;
+}
+
+.top-list img {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.top-list h2 {
+    margin-top: 0;
+}
+
+.top-list ol {
+    list-style-position: inside;
+}
+
+.top-list li {
+    min-height: 200px;
+}
+
+.top-list .list-comment {
+    margin-top: 0;
+}
+
+.top-list .list-response {
+    font-style: italic;
+}
+
+.top-list-first {
+    float: left;
+    margin-right: 10%;
+}
+
+.top-list-second {
+    float: right;
+}
+
+.top-list-images li {
+    min-height: 300px;
+}
+
+
+
+/******************************************************************************
+  SIZE CLASSES
+******************************************************************************/
+.giga { font-size: 3.5rem; }
+.mega { font-size: 3rem; }
+.kilo { font-size: 2rem; }
+
+
+
+/******************************************************************************
+  MEDIA QUERIES
+******************************************************************************/
+/* Mobile */
+@media only screen and (max-width: 60em) {
+    header,
+    main {
+        padding-left: 1em;
+    }
+    
+    footer {
+        padding-right: 1rem;
+    }
+    
+    ul,
+    ol {
+        list-style-position: inside;
+    }
+    
+    a.menu-link {
+        
+        display: block;
+        margin: 0;
+        padding: .714em 0;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .profile-aside {
+        float: none;
+        margin-top: initial;
+        width: auto;
+    }
+
+    .profile-bio {
+        float: none;
+        margin-top: initial;
+        width: auto;
+    }
+    
+    .site-nav {
+        clear: both;
+        -webkit-transition: all 0.3s ease-out;  
+           -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+             -o-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+    }
+
+    .js .site-nav {
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .site-nav.active {
+        max-height: 15em;
+    }
+
+    .site-nav ul {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #808080;
+    }
+
+    .site-nav li {
+        display: list-item;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 1rem 0 0;
+    }
+
+    .site-nav li + li {
+        margin-left: 0;
+    }
+    
+    .site-nav li a {
+        display: block;
+        padding: 0.8em;
+        border-bottom: 1px solid #808080;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+/******************************************************************************
+  PRINT STYLES
+******************************************************************************/
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    
+    audio,
+    canvas,
+    video {
+        display: none;
+    }
+}

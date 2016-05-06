@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brian Koser, Host and Webmaster
+    Melissa Koser, Host
+
+# TECHNOLOGY COLOPHON
+
+    css: Normalize.css
+    js: jQuery
+    node: metalsmith
+    software: Github for Windows, Visual Studio Code, Notepad++, MarkdownPad2
+    webhost: NearlyFreeSpeech.net
+    
+# CREDIT
