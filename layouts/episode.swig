@@ -1,6 +1,6 @@
 {% extends "default.swig" %}
 
-{% block title %}Episode {{number}}: {{title|striptags}} · {{sitename}}{% endblock %}
+{% block title %}Ep. {{number}}: {{title|striptags}} · {{sitename}}{% endblock %}
 
 {% block css %}
 {% endblock %}

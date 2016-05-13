@@ -29,19 +29,19 @@
                 <a href="#menu" class="menu-link">≡ Menu</a>
                 <nav id="menu" role="navigation" class="site-nav">
                     <ul class="horizontal">
-                        <li {% if section == 'home' %}class="site-nav-active"{% endif %}>
+                        <li>
                             <a href="/">
                                 <svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg>
                                 <span class="site-nav-link">Home</span>
                             </a>
                         </li>                        
-                        <li {% if section == 'episodes' %}class="site-nav-active"{% endif %}>
+                        <li>
                             <a href="/episodes/">
                                 <svg class="icon icon-quill"><use xlink:href="#icon-quill"></use></svg>
                                 <span class="site-nav-link">Episodes</span>
                             </a>
                         </li>
-                        <li {% if section == 'about' %}class="site-nav-active"{% endif %}>
+                        <li>
                             <a href="/about/">
                                 <svg class="icon icon-images"><use xlink:href="#icon-images"></use></svg>
                                 <span class="site-nav-link">About</span>

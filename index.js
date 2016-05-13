@@ -26,7 +26,7 @@ Metalsmith(__dirname)
     .use(define({
         development: true,
         sitelocation: 'http://tto.koser.us',
-        sitename: 'tto.koser.us'
+        sitename: 'Ten to One'
     }))
     
     /* drafts before collections so files are removed before being added to collection */
@@ -35,7 +35,7 @@ Metalsmith(__dirname)
     /* collections before inplace so we can loop over them in swig */
     /* collections before markdown so we can just get posts */
     .use(collections({
-        posts: {
+        episodes: {
             sortBy: 'pubdate',
             reverse: true
         }
@@ -54,8 +54,7 @@ Metalsmith(__dirname)
     
     /* markdown before hyphenate so we have HTML elements */
     .use(markdown({
-        smartypants: false,
-        recipe_keys: ['comments', 'yield', 'ingredients', 'instructions']
+        smartypants: false
     }))
     
     .use(hyphenate())
