@@ -136,7 +136,7 @@ article footer {
 }
 
 p a {
-    border-bottom: solid 1px #4f93f9;
+    border-bottom: solid 1px #196719;
     text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ blockquote {
 }
 
 blockquote:before {
-    background-color: #4f93f9;
+    background-color: #196719;
     color: white;
     content: open-quote;
     font-family: Georgia, 'Droid Serif', serif;
@@ -399,7 +399,7 @@ td {
 }
 
 th {
-    background-color: #4f93f9;
+    background-color: #196719;
     color: #fff;
 }
 
@@ -488,9 +488,9 @@ var,
 code,
 var {
     background-color: rgba(0,107,159,0.04);
-    border: 1px solid #4f93f9;
+    border: 1px solid #196719;
     border-radius: 2px;
-    color: #4f93f9;
+    color: #196719;
     margin: 0 0.15em;
     padding: 0 0.3em;
 }
@@ -520,7 +520,7 @@ kbd kbd {
 ******************************************************************************/
 hr {
     border: 0;
-    border-top: 1px solid #4f93f9;
+    border-top: 1px solid #196719;
     display: block;
     height: 1px;
     padding: 0;
@@ -537,13 +537,13 @@ hr.fleuron::after {
 }
 
 ::-moz-selection {
-    background: #4f93f9;
+    background: #196719;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background-color: #4f93f9;
+    background-color: #196719;
     color: #fff;
     text-shadow: none;
 }
@@ -704,7 +704,7 @@ hr.fleuron::after {
 }
 
 .header-container {
-    background-color: #4f93f9;
+    background-color: #196719;
     color: #fff;
     margin-top: 0;
 }
@@ -723,7 +723,7 @@ hr.fleuron::after {
 }
 
 .keywords li {
-    border: 2px solid #4f93f9;
+    border: 2px solid #196719;
     border-radius: 15px;
     padding: .15em;
 }
@@ -748,10 +748,6 @@ hr.fleuron::after {
 .paper {
     box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
     padding: 1em;
-}
-
-.post-date::before {
-    content: ' · ';
 }
 
 .post-excerpt {
@@ -793,11 +789,6 @@ hr.fleuron::after {
 
 .site-nav {
     margin: 0;
-}
-
-.site-nav li:hover,
-.site-nav-active {
-    border-bottom: #fff 5px solid;
 }
 
 .site-nav-link {
@@ -902,7 +893,7 @@ hr.fleuron::after {
     }
     
     a.menu-link {
-        
+        color: white;
         display: block;
         margin: 0;
         padding: .714em 0;

@@ -8,7 +8,7 @@ paginate: posts
 {% for episode in collections.episodes %}
 <article>
     <header>
-        <h2 class="post-title">[{{ episode.title|safe }}](/{{ episode.path }})</a></h2>
+        <h2 class="post-title">[#{{episode.number}}: {{ episode.title|safe }}](/{{ episode.path }})</a></h2>
         <span class="post-date">{{ episode.pubdate|date('Y-m-d') }}</span>
     </header>
     <p class="post-excerpt">{{ episode.excerpt|striptags }} ([more](/{{ episode.path }}))</p>
