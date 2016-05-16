@@ -48,8 +48,7 @@ Metalsmith(__dirname)
     /* inplace before layouts because that's how it is in all examples */
     /* inplace before filepath so we can have location of generated pages */
     .use(inplace({
-        engine: 'swig',
-        pattern: '**/*.md'
+        engine: 'swig'
     }))
     
     /* markdown before hyphenate so we have HTML elements */
