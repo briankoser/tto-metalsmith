@@ -57,7 +57,7 @@ header {
 footer,
 small,
 .milli,
-.post-author,
+.post-comments,
 .post-date {
     font-size: 0.714rem;
 }
@@ -713,6 +713,10 @@ hr.fleuron::after {
 .paper {
     box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
     padding: 1em;
+}
+
+.post-comments::before {
+    content: ' · ';
 }
 
 .post-excerpt {

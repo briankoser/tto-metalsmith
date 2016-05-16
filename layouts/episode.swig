@@ -22,9 +22,24 @@
         {% endblock %}
         
             <p class="contact">
-                Let us know what you would put on your list! Email us at <a href="mailto:tto@koser.us">tto@koser.us</a>
+                Let us know what you would put on your list! Comment below or email us at <a href="mailto:tto@koser.us">tto@koser.us</a>
             </p>
         </div>
+        
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = {{sitelocation}}/{{filename}}
+                this.page.identifier = {{number}}
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//tto.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>If you’d like to view comments, you’ll need to enable JavaScript.</noscript>
         
         <footer>
             <nav>
