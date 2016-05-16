@@ -13,6 +13,10 @@
         </header>
         
         <div class="e-content">
+            <audio src="{{filename}}.mp3" preload="metadata" controls>
+            </audio>
+            <a href="#">Download</a> · <a href="#">Subscribe</a>
+            
         {% block article %}
             {{contents|safe}}
         {% endblock %}
