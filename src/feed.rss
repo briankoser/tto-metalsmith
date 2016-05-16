@@ -18,7 +18,7 @@
 		<managingEditor>tto@koser.us (Melissa Koser)</managingEditor>
 		<webMaster>tto@koser.us (Brian Koser)</webMaster>
 		<image>
-			<url>http://cdn.koser.us/tto/logo-feed.png</url>
+			<url>{{cdnlocation}}/tto/logo-feed.png</url>
 			<title>Ten to One</title>
 			<link>{{sitelocation}}</link>
 		</image>
@@ -38,14 +38,14 @@
 		</itunes:owner>
 		<itunes:block>no</itunes:block>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="http://cdn.koser.us/tto/logo-feed.png" />
+		<itunes:image href="{{cdnlocation}}/tto/logo-feed.png" />
 		{% for episode in collections.episodes %}
 		<item>
 			<title>Ep. {{number}}: {{title}}</title>
 			<link>{{sitelocation}}/{{slug}}/</link>
-			<guid isPermaLink="false">http://cdn.koser.us/tto/{{slug}}.mp3</guid>
+			<guid isPermaLink="false">{{cdnlocation}}/tto/{{slug}}.mp3</guid>
 			<description>{{description}}</description>
-			<enclosure url="http://cdn.koser.us/tto/{{slug}}.mp3" length="{{episode.bytes}}" type="audio/mpeg" />
+			<enclosure url="{{cdnlocation}}/tto/{{slug}}.mp3" length="{{episode.bytes}}" type="audio/mpeg" />
 			<pubDate>{{ pubdate|date('r') }}</pubDate>
 			<category>Podcasts</category>
 			

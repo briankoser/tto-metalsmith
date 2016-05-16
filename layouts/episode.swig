@@ -13,9 +13,9 @@
         </header>
         
         <div class="e-content">
-            <audio src="{{filename}}.mp3" preload="metadata" controls>
+            <audio src="{{cdnlocation}}/tto/{{slug}}.mp3" preload="metadata" controls>
             </audio>
-            <a href="#">Download</a> · <a href="#">Subscribe</a>
+            <a href="{{cdnlocation}}/tto/{{slug}}.mp3">Download</a> · <a href="#">Subscribe</a>
             
         {% block article %}
             {{contents|safe}}
@@ -29,7 +29,7 @@
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function () {
-                this.page.url = {{sitelocation}}/{{filename}}
+                this.page.url = '{{sitelocation}}/{{slug}}'
                 this.page.identifier = {{number}}
             };
             (function() {
