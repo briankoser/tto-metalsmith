@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:cc="http://web.resource.org/cc/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+	<channel>
+		<title>Ten to One</title>
+		<atom:link href="http://tto.koser.us/feed.rss" rel="self" type="application/rss+xml" />
+		<link>http://tto.koser.us</link>
+		<description>Brian and Melissa Koser make top ten lists of everything.</description>
+		<lastBuildDate>Thu, 12 May 2016 21:28:22 +0000</lastBuildDate>
+		<language>en-US</language>	
+		<copyright>Copyright © 2016 Brian and Melissa Koser</copyright>
+		<managingEditor>tto@koser.us (Melissa Koser)</managingEditor>
+		<webMaster>tto@koser.us (Brian Koser)</webMaster>
+		<image>
+			<url>http://cdn.koser.us/tto/logo-feed.png</url>
+			<title>Ten to One</title>
+			<link>http://tto.koser.us</link>
+		</image>
+		<itunes:subtitle>Top Ten Lists of Everything</itunes:subtitle>
+		<itunes:summary>Brian and Melissa Koser make top ten lists of everything.</itunes:summary>
+		<itunes:keywords>Koser, Top, Ten, List, Brian, Melissa</itunes:keywords>
+		<itunes:category text="TV &#38; Film" />
+		<itunes:category text="Religion &#38; Spirituality">
+			<itunes:category text="Christianity" />
+		</itunes:category>
+		<itunes:author>Brian and Melissa Koser</itunes:author>
+		<itunes:owner>
+			<itunes:name>Melissa Koser</itunes:name>
+			<itunes:email>tto.koser.us</itunes:email>
+		</itunes:owner>
+		<itunes:block>no</itunes:block>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:image href="http://cdn.koser.us/tto/logo-feed.png" />
+		<item>
+			<title>Episode 467: Adam McKay is Irredeemable and Other News</title>
+			<link>http://thescifichristian.com/2016/05/episode-467-adam-mckay-is-irredeemable-and-other-news/?utm_source=rss&#038;utm_medium=rss</link>
+			<comments>http://thescifichristian.com/2016/05/episode-467-adam-mckay-is-irredeemable-and-other-news/#respond</comments>
+			<pubDate>Thu, 12 May 2016 21:26:07 +0000</pubDate>
+			<dc:creator><![CDATA[Matt]]></dc:creator>
+			<category><![CDATA[Books]]></category>
+			<category><![CDATA[Fantasy]]></category>
+			<guid isPermaLink="false">http://thescifichristian.com/?p=12093</guid>
+			<description><![CDATA[The Sci-Fi Christian – 5/12/16 “The Sci-Fi Christian: Adam McKay is Irredeemable and Other News” featuring Matt Anderson and Ben [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://thescifichristian.com/wp-content/uploads/2016/05/Episode467.jpg?utm_source=rss&utm_medium=rss"><img src="http://thescifichristian.com/wp-content/uploads/2016/05/Episode467.jpg?utm_source=rss&utm_medium=rss" alt="Episode467" width="640" height="250" class="aligncenter size-full wp-image-12094" srcset="http://thescifichristian.com/wp-content/uploads/2016/05/Episode467.jpg?utm_source=rss&utm_medium=rss 640w, http://thescifichristian.com/wp-content/uploads/2016/05/Episode467-300x117.jpg?utm_source=rss&utm_medium=rss 300w" sizes="(max-width: 640px) 100vw, 640px" /></a></p>
+	<p><strong>The Sci-Fi Christian – 5/12/16</strong> “<em><strong><a href="http://media.blubrry.com/scifichristian/http://scifichristian.hipcast.com/deluge/scifichristian-20160512161633-9376.mp3?utm_source=rss&utm_medium=rss">The Sci-Fi Christian: Adam McKay is Irredeemable and Other News</a></strong></em>” featuring <strong>Matt Anderson and Ben De Bono</strong></p>
+	<p>We have mostly movie updates in this week&#8217;s news episode.</p>
+	<p>Donate to help the Water Fund here: https://www.onedayswages.org/thescifichristian?utm_source=rss&utm_medium=rss </p>
+	]]></content:encoded>
+				<enclosure url="http://media.blubrry.com/scifichristian/http://scifichristian.hipcast.com/deluge/scifichristian-20160512161633-9376.mp3" length="1" type="audio/mpeg" />
+			<itunes:duration>0:18:28</itunes:duration>
+			<itunes:subtitle>
+	The Sci-Fi Christian – 5/12/16 “The Sci-Fi Christian: Adam McKay is Irredeemable and Other News” featuring Matt Anderson and Ben De Bono
+	We have mostly movie updates in this week&#8217;s news episode.
+	Donate to help the Water Fund here: https://www[...]</itunes:subtitle>
+			<itunes:summary>
+	The Sci-Fi Christian – 5/12/16 “The Sci-Fi Christian: Adam McKay is Irredeemable and Other News” featuring Matt Anderson and Ben De Bono
+	We have mostly movie updates in this week&#8217;s news episode.
+	Donate to help the Water Fund here: https://www.onedayswages.org/thescifichristian?utm_source=rss&#038;utm_medium=rss </itunes:summary>
+			<itunes:keywords>Books, Fantasy, Movies, News, Podcast, Sci-Fi, Superheroes</itunes:keywords>
+			<itunes:author>The Sci-Fi Christian</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:block>no</itunes:block>
+		</item>
+	</channel>
+</rss>
