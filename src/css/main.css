@@ -62,6 +62,12 @@ small,
     font-size: 0.714rem;
 }
 
+footer .icon,
+.post-date .icon,
+.post-comments .icon {
+    font-size: 13px;
+}
+
 footer,
 main,
 .site-nav ul,
@@ -229,6 +235,9 @@ h6, .zeta {
     font-size: 1rem;
 }
 
+h1 .icon {
+    font-size: 29px;
+}
 
 
 /******************************************************************************
@@ -648,6 +657,7 @@ hr.fleuron::after {
 
 .footer-container,
 .footer-container a,
+.footer-container .icon,
 .site-nav li a,
 .site-nav .icon {
     color: #fff;
@@ -715,8 +725,8 @@ hr.fleuron::after {
     padding: 1em;
 }
 
-.post-comments::before {
-    content: ' · ';
+.post-comments {
+    margin-left: 1em;
 }
 
 .post-excerpt {
@@ -830,6 +840,10 @@ hr.fleuron::after {
 
 .top-list-images li {
     min-height: 300px;
+}
+
+#disqus_thread {
+    margin-top: 2.8em;
 }
 
 
