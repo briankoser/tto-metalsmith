@@ -44,6 +44,12 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/subscribe/">
+                                <svg class="icon icon-quill"><use xlink:href="#icon-quill"></use></svg>
+                                <span class="site-nav-link">Subscribe</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="/about/">
                                 <svg class="icon icon-images"><use xlink:href="#icon-images"></use></svg>
                                 <span class="site-nav-link">About</span>
