@@ -4,6 +4,7 @@
   "dependencies": {
     "joi": "7.0.x",
     "lodash": "3.10.x",
+    "marked": "0.3.x",
     "metalsmith": "1.7.x",
     "metalsmith-assets": "0.1.x",
     "metalsmith-collections": "0.7.x",
