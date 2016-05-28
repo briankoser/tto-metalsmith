@@ -877,10 +877,11 @@ hr.fleuron::after {
     }
     
     a.menu-link {
-        color: white;
+        color: black;
         display: block;
         margin: 0;
         padding: .714em 0;
+        text-decoration: none;
     }
 
     .desktop-only {
