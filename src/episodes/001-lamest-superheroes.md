@@ -7,8 +7,8 @@ title: Lamest Superheroes
 description: Brian and Melissa invent 10 lame superheroes. 
 pubdate: 2016-04-18
 slug: 001-lamest-superheroes
-bytes: 1234
-duration: 0:18:28
+bytes: 13373066
+duration: 0:27:51
 tags: superheroes
 ---
 
