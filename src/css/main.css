@@ -864,7 +864,7 @@ hr.fleuron::after {
 @media only screen and (max-width: 60em) {
     header,
     main {
-        padding-left: 1em;
+        padding: 0 1em;
     }
     
     footer {
