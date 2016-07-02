@@ -18,7 +18,12 @@
             <a href="{{cdnlocation}}/tto/{{slug}}.mp3">Download</a> · <a href="#">Subscribe</a>
             
         {% block article %}
-            {{contents|safe}}
+            <p>{{intro|safe}}</p>
+
+            <details class="spoilers">
+                <summary>Expand for show notes. Spoilers!</summary>
+                {{contents|safe}}
+            </details>
         {% endblock %}
         
             <p class="contact">

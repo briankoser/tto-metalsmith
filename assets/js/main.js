@@ -12,6 +12,15 @@ $(document).ready(function() {
     
     //document.body.innerHTML = MarkFractions(document.body.innerHTML);
     //document.body.innerHTML = MarkSmallCaps(document.body.innerHTML);
+
+  	var $tab = $('.tab');
+  
+    $tab.on("click", function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $this.toggleClass('active');
+        $this.next('.panel').toggleClass('active');
+    });
 });
 
 function MarkFractions(text) {

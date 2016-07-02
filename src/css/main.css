@@ -58,7 +58,8 @@ footer,
 small,
 .milli,
 .post-comments,
-.post-date {
+.post-date,
+.spoilers summary {
     font-size: 0.714rem;
 }
 
@@ -238,6 +239,7 @@ h6, .zeta {
 h1 .icon {
     font-size: 29px;
 }
+
 
 
 /******************************************************************************
@@ -693,6 +695,11 @@ hr.fleuron::after {
     width: 1em;
 }
 
+
+.icon-os {
+    font-size: 30px;
+}
+
 .js .site-nav {
     max-height: none;
 }
@@ -780,6 +787,10 @@ hr.fleuron::after {
     font-weight: bold;
 }
 
+.spoilers summary {
+    font-style: italic;
+}
+
 .star-rating {
     color: goldenrod;
 }
@@ -854,6 +865,59 @@ hr.fleuron::after {
 .giga { font-size: 3.5rem; }
 .mega { font-size: 3rem; }
 .kilo { font-size: 2rem; }
+
+
+
+/******************************************************************************
+  ACCORDIONS
+******************************************************************************/
+.accordion ol {
+    list-style-position: inside;
+}
+
+.accordion li {
+    margin-top: 1em;
+}
+
+.tab {
+    padding: 1em;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+}
+.tab:after {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.tab.active {
+    background: rgba(0,0,0,0.3);
+}
+.tab.active:after {
+    content: '-'; 
+}
+
+.panel { 
+    overflow: hidden;
+}
+.js .panel {
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+.js .panel.active {
+    max-height: 260em;
+}
+.panel p {
+    padding: 1em;
+}
+.panel p:last-child {
+    margin: 0; 
+}
 
 
 
