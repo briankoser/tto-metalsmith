@@ -474,6 +474,11 @@ var {
     padding: 0 0.3em;
 }
 
+kbd samp {
+    font: 26px/1.4 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+}
+
 kbd kbd {
     background-color: #f7f7f7;
     border: 1px solid #ccc;
