@@ -13,9 +13,9 @@
         </header>
         
         <div class="e-content">
-            <audio src="{{cdnlocation}}/tto/{{slug}}.mp3" preload="metadata" controls>
+            <audio src="{{cdnlocation}}/{{slug}}.mp3" preload="metadata" controls>
             </audio>
-            <a href="{{cdnlocation}}/tto/{{slug}}.mp3">Download</a> · <a href="#">Subscribe</a>
+            <a href="{{cdnlocation}}/{{slug}}.mp3">Download</a>
             
         {% block article %}
             <p>{{intro|safe}}</p>

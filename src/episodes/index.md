@@ -18,6 +18,5 @@ paginate: posts
             <a href="/{{episode.path}}#disqus_thread">Comments</a>
         </span>
     </header>
-    <p class="post-excerpt">{{ episode.excerpt|striptags }} ([more](/{{ episode.path }}))</p>
 </article>
 {% endfor %}

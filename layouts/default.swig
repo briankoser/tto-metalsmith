@@ -14,6 +14,9 @@
         <meta property="og:title" content="{{title}}">
         <meta property="og:description" content="{{description}}">
         <meta property="og:image" content="http://tto.koser.us/tile.png">
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="558" />
+        <meta property="og:image:height" content="558" />
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -69,7 +72,7 @@
         <div class="footer-container">
             <footer role="contentinfo">
                 <svg class="icon icon-lab"><use xlink:href="#icon-lab"></use></svg>
-                Created by <a href="http://briankoser.com">Brian Koser</a>
+                Website created by <a href="http://briankoser.com">Brian Koser</a>
             </footer>
         </div>
                 
