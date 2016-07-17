@@ -340,11 +340,13 @@ AddDefaultCharset utf-8
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
 
-    #RewriteMap shortcodes txt:/shortcodes.txt
-    #RewriteRule ^/(\d+)$ ${shortcodes:$1} [R=permanent,L]
-
-    #RewriteRule ^.*$ /episodes/001-lamest-superheroes/ [L]
-
+    RewriteRule ^1$ /episodes/001-lamest-superheroes/ [R=permanent,L]
+    RewriteRule ^2$ /episodes/002-musicals/ [R=permanent,L]
+    RewriteRule ^3$ /episodes/003-podcasts/ [R=permanent,L]
+    RewriteRule ^4$ /episodes/004-villains/ [R=permanent,L]
+    RewriteRule ^5$ /episodes/005-bible-stories-that-make-us-laugh/ [R=permanent,L]
+    RewriteRule ^6$ /episodes/006-veggietales-songs/ [R=permanent,L]
+    RewriteRule ^7$ /episodes/007-recommendations-for-my-spouse/ [R=permanent,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
