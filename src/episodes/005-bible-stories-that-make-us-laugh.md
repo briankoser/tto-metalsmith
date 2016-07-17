@@ -4,8 +4,7 @@ layout: episode.swig
 
 number: 5
 title: Bible Stories that Make Us Laugh
-description: Brian and Melissa tell ten funny Bible stories.
-intro: Melissa and Brian take turns telling stories from the Bible that make them laugh.
+description: Melissa and Brian take turns telling stories from the Bible that make them laugh.
 pubdate: 2016-07-07
 slug: 005-bible-stories-that-make-us-laugh
 bytes: 19841024

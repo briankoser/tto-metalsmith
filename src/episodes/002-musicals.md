@@ -4,8 +4,7 @@ layout: episode.swig
 
 number: 2
 title: Musicals
-description: Brian and Melissa list their ten favorite movie musicals. 
-intro: This week Melissa and Brian each pick their top ten movie musicals.
+description: Melissa and Brian each pick their top ten movie musicals.
 pubdate: 2016-06-02
 slug: 002-musicals
 bytes: 16643378

@@ -4,8 +4,7 @@ layout: episode.swig
 
 number: 3
 title: Podcasts
-description: Brian and Melissa list their ten favorite podcasts. 
-intro: Brian and Melissa talk through their top ten podcasts.
+description: Brian and Melissa talk through their top ten podcasts.
 pubdate: 2016-06-17
 slug: 003-podcasts
 bytes: 17743238

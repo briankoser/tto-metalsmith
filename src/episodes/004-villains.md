@@ -4,8 +4,7 @@ layout: episode.swig
 
 number: 4
 title: Villains
-description: Brian and Melissa list their ten favorite villains.
-intro: Melissa and Brian discuss the ten villains they love to hate (or just plain hate).
+description: Melissa and Brian discuss the ten villains they love to hate (or just plain hate).
 pubdate: 2016-06-28
 slug: 004-villains
 bytes: 21954560

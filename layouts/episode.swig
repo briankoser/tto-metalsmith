@@ -18,7 +18,7 @@
             <a href="{{cdnlocation}}/{{slug}}.mp3">Download</a>
             
         {% block article %}
-            <p>{{intro|safe}}</p>
+            <p>{{description|safe}}</p>
 
             <details class="spoilers">
                 <summary>Expand for show notes. Spoilers!</summary>
