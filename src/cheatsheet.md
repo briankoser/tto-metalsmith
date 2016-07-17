@@ -12,10 +12,13 @@ section: home
     <li><b>Dynamic compression</b> (<kbd><samp>Effect</samp>, <samp>Compress dynamics</samp></kbd>)
     <li><b>Remove Noise</b> (<kbd><samp>Effect</samp>, <samp>Noise removal</samp></kbd>)
     <li><b>Edit</b>
-    <li><b>Remove Silence</b> (<kbd><samp>Effect</samp>, <samp>Truncate silence</samp></kbd>)
-    <li><b>Add intro and outro</b> (<kbd><kdb>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd><kbd>)
+    <li><b>Remove Silence</b> (<kbd><samp>Effect</samp>, <samp>Truncate silence</samp></kbd>) one second
     <li><b>Fade in and fade out</b> start and end of clips, if necessary
+    <li><b>Add intro and outro</b> (<kbd><kdb>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd><kbd>)
     <li><b>Export to WAV</b>
     <li><b>Convert to MP3</b> with iTunes
     <li><b>Add metadata</b>
+    <li>Upload file to Amazon S3
+    <li>Add episode file with show notes
+    <li>Update feeds.rss
 </ol>
