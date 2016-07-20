@@ -5,11 +5,12 @@ section: home
 ---
 
 <h1>Editing Cheatsheet</h1>
-
 <ol>
     <li><b>Save Audacity project</b> (.aup file) while recording.
     <li>After recording, <b>Export to WAV</b>. Add "_raw" to file name.
-    <li><b>Dynamic compression</b> (<kbd><samp>Effect</samp>, <samp>Compress dynamics</samp></kbd>)
+    <li>
+        <b>Dynamic compression</b> (<kbd><samp>Effect</samp>, <samp>Compress dynamics</samp></kbd>)
+        ![]
     <li><b>Remove Noise</b> (<kbd><samp>Effect</samp>, <samp>Noise removal</samp></kbd>)
     <li><b>Edit</b>
     <li><b>Remove Silence</b> (<kbd><samp>Effect</samp>, <samp>Truncate silence</samp></kbd>) one second
@@ -17,7 +18,9 @@ section: home
     <li><b>Add intro and outro</b> (<kbd><kdb>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd><kbd>)
     <li><b>Export to WAV</b>
     <li><b>Convert to MP3</b> with iTunes
-    <li><b>Add metadata</b>
+    <li>
+        <b>Add metadata</b>
+        ![]
     <li>Upload file to Amazon S3
     <li>Add episode file with show notes
     <li>Update feeds.rss
