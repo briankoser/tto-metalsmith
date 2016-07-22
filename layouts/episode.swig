@@ -31,7 +31,7 @@
             </p>
         </div>
         
-        <div id="disqus_thread"></div>
+        <div id="disqus_thread" class="margin-top-double"></div>
         <script>
             var disqus_config = function () {
                 this.page.url = '{{sitelocation}}/{{slug}}'
@@ -49,10 +49,10 @@
         <footer>
             <nav>
                 {% if next %}
-                    <a class="float-left margin-top" rel="prev" href="/{{ next.path }}">« Ep. {{next.number}}: {{ next.title|striptags }}</a>
+                    <a class="float-left margin-top-double" rel="prev" href="/{{ next.path }}">« Ep. {{next.number}}: {{ next.title|striptags }}</a>
                 {% endif %}
                 {% if previous %}
-                    <a class="float-right margin-top" rel="next" href="/{{ previous.path }}">Ep. {{previous.number}}: {{ previous.title|striptags }} »</a>
+                    <a class="float-right margin-top-double" rel="next" href="/{{ previous.path }}">Ep. {{previous.number}}: {{ previous.title|striptags }} »</a>
                 {% endif %}
             </nav>
         </footer>

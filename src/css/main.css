@@ -584,6 +584,10 @@ hr.fleuron::after {
     margin-top: 1.4em;
 }
 
+.margin-top-double {
+    margin-top: 2.8em;
+}
+
 .no-list-type li {
     list-style-type: none;
 }
@@ -860,10 +864,6 @@ hr.fleuron::after {
 
 .top-list-images li {
     min-height: 300px;
-}
-
-#disqus_thread {
-    margin-top: 2.8em;
 }
 
 
