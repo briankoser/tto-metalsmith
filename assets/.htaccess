@@ -347,6 +347,10 @@ AddDefaultCharset utf-8
     RewriteRule ^5$ /episodes/005-bible-stories-that-make-us-laugh/ [R=permanent,L]
     RewriteRule ^6$ /episodes/006-veggietales-songs/ [R=permanent,L]
     RewriteRule ^7$ /episodes/007-recommendations-for-my-spouse/ [R=permanent,L]
+    RewriteRule ^8$ /episodes/008-actors/ [R=permanent,L]
+    RewriteRule ^9$ /episodes/009-accomplishments/ [R=permanent,L]
+    RewriteRule ^10$ /episodes/010-worst-things-ive-ever-ingested/ [R=permanent,L]
+    RewriteRule ^11$ /episodes/011-authors-ive-never-read-but-want-to/ [R=permanent,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
